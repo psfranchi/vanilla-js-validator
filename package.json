@@ -1,0 +1,54 @@
+{
+  "name": "vanilla-js-validator",
+  "version": "0.1.0",
+  "description": "Lightweight, class-driven form validation for vanilla JavaScript",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./presets": "./src/presets/index.js",
+    "./extensions": "./src/extensions/index.js",
+    "./styles/default.css": "./styles/default.css"
+  },
+  "files": [
+    "src",
+    "styles",
+    "examples",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/**/*.test.js",
+    "test:coverage": "node --test --experimental-test-coverage test/**/*.test.js",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psfranchi/vanilla-js-validator.git"
+  },
+  "keywords": [
+    "validation",
+    "forms",
+    "javascript",
+    "vanilla",
+    "bootstrap",
+    "tailwind"
+  ],
+  "author": "Sebastian Franchi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/psfranchi/vanilla-js-validator/issues"
+  },
+  "homepage": "https://github.com/psfranchi/vanilla-js-validator#readme",
+  "devDependencies": {
+    "@storybook/html-vite": "^10.5.0",
+    "jsdom": "^26.1.0",
+    "storybook": "^10.5.0",
+    "vite": "^8.1.4"
+  }
+}

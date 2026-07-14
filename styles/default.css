@@ -1,0 +1,86 @@
+/* Optional styles for the default preset (.vj-invalid / .vj-error) */
+
+.vj-demo {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #1c1917;
+  max-width: 28rem;
+}
+
+.vj-demo form {
+  display: grid;
+  gap: 1rem;
+}
+
+.vj-field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.vj-field label,
+.vj-field .vj-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.vj-field input:not([type='checkbox']):not([type='radio']):not([type='range']):not([type='file']):not([type='color']),
+.vj-field select,
+.vj-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #a8a29e;
+  border-radius: 4px;
+  font: inherit;
+  background: #fff;
+}
+
+.vj-field textarea {
+  min-height: 5rem;
+  resize: vertical;
+}
+
+.vj-choice-list {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.vj-choice {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+}
+
+.vj-field .vj-invalid,
+.vj-invalid {
+  border-color: #e31c3d;
+}
+
+input[type='checkbox'].vj-invalid,
+input[type='radio'].vj-invalid {
+  outline: 2px solid #e31c3d;
+  outline-offset: 2px;
+}
+
+.vj-error {
+  display: block;
+  margin-top: 0.15rem;
+  color: #e31c3d;
+  font-size: 0.875rem;
+}
+
+.vj-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.vj-actions button {
+  font: inherit;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid #44403c;
+  border-radius: 4px;
+  background: #1c1917;
+  color: #fafaf9;
+  cursor: pointer;
+}
